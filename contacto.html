@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto — Jaume Joiers</title>
+  <meta name="description" content="Contacta con Jaume Joiers: visítanos en tienda, escríbenos o llámanos.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav-container">
+      <a href="index.html" class="logo">Jaume <span>Joiers</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="nosotros.html">Sobre nosotros</a></li>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <section class="section" style="padding-bottom: 2rem;">
+    <div class="section-header">
+      <span class="section-eyebrow">Hablemos</span>
+      <h2>Contacto</h2>
+      <p>¿Tienes alguna pregunta, quieres hacer un encargo o simplemente saludar? Estamos aquí.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: 0;">
+    <div class="contacto-grid">
+      <div class="contacto-info">
+        <h3>Visítanos</h3>
+        <div class="contacto-item">
+          <span>Dirección</span>
+          <p>Calle Santa Bárbara 23, 46450 Benifaió (Valencia)</p>
+        </div>
+        <div class="contacto-item">
+          <span>Teléfono</span>
+          <p><a href="tel:+34647655061">+34 647 65 50 61</a></p>
+        </div>
+        <div class="contacto-item">
+          <span>Email</span>
+          <p><a href="mailto:info@jaumejoiers.com">info@jaumejoiers.com</a></p>
+        </div>
+        <div class="contacto-item">
+          <span>Horario</span>
+          <p>Lunes a viernes: 10:00 – 14:00 y 17:00 – 20:00<br>Sábados: 10:00 – 14:00</p>
+        </div>
+        <div class="mapa-placeholder">
+          <iframe src="https://www.google.com/maps?q=Calle+Santa+Barbara+23,+46450+Benifaio,+Valencia&output=embed" loading="lazy" title="Ubicación de Jaume Joiers"></iframe>
+        </div>
+      </div>
+
+      <div class="contacto-form-wrap">
+        <h3>Escríbenos</h3>
+        <form class="contacto-form">
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">Jaume <span>Joiers</span></a>
+        <p>Piezas únicas hechas con dedicación, pensadas para durar toda una vida.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Navegación</h5>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="nosotros.html">Sobre nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contacto</h5>
+        <ul>
+          <li><a href="tel:+34647655061">+34 647 65 50 61</a></li>
+          <li><a href="mailto:info@jaumejoiers.com">info@jaumejoiers.com</a></li>
+          <li>Calle Santa Bárbara 23, Benifaió</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2026 Jaume Joiers. Todos los derechos reservados.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
