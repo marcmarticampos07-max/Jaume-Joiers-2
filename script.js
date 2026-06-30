@@ -1,6 +1,23 @@
 // ===== Joyería — Script compartido =====
 
 document.addEventListener('DOMContentLoaded', () => {
+  // Generar tarjetas de producto automáticamente (si existe la lista PRODUCTOS y el contenedor)
+  const contenedor = document.querySelector('.vitrina-grid[data-auto]');
+
+  if (contenedor && typeof PRODUCTOS !== 'undefined') {
+    contenedor.innerHTML = PRODUCTOS.map(p => `
+      <div class="vitrina-pieza" data-categoria="${p.categoria}">
+        <div class="vitrina-imagen">
+          <img src="${p.imagen}" alt="${p.nombre}" onerror="this.parentElement.textContent='Foto no disponible'">
+        </div>
+        <span class="vitrina-categoria">${p.categoria.charAt(0).toUpperCase() + p.categoria.slice(1)}</span>
+        <h3>${p.nombre}</h3>
+        <p>${p.descripcion}</p>
+        <p style="margin-top:0.4rem; font-weight:500; color:var(--marron);">${p.precio}</p>
+      </div>
+    `).join('');
+  }
+
   // Menú móvil
   const toggle = document.querySelector('.nav-toggle');
   const links = document.querySelector('.nav-links');
