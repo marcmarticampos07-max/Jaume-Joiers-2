@@ -71,16 +71,14 @@ ul {
 }
 
 .logo {
-  font-family: var(--fuente-titulos);
-  font-size: 1.4rem;
-  font-weight: 300;
-  letter-spacing: 0.28em;
-  text-transform: uppercase;
-  color: var(--marron);
+  display: flex;
+  align-items: center;
 }
 
-.logo span {
-  color: var(--marron);
+.logo img {
+  height: 48px;
+  width: auto;
+  display: block;
 }
 
 .nav-links {
@@ -577,13 +575,11 @@ ul {
 }
 
 .footer-brand .logo {
-  color: var(--beige);
   margin-bottom: 1rem;
-  display: block;
 }
 
-.footer-brand .logo span {
-  color: var(--beige);
+.footer-brand .logo img {
+  height: 70px;
 }
 
 .footer-brand p {
