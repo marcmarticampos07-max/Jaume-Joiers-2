@@ -189,6 +189,19 @@ ul {
   z-index: 2;
 }
 
+.hero-logo {
+  height: 140px;
+  width: auto;
+  margin: 0 auto 2rem;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .hero-logo {
+    height: 100px;
+  }
+}
+
 .hero-eyebrow {
   font-size: 0.78rem;
   letter-spacing: 0.28em;
