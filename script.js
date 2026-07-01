@@ -18,6 +18,21 @@ document.addEventListener('DOMContentLoaded', () => {
     `).join('');
   }
 
+  // Piezas destacadas en inicio (las 3 primeras de productos.js)
+  const destacadas = document.querySelector('.vitrina-grid[data-destacadas]');
+  if (destacadas && typeof PRODUCTOS !== 'undefined') {
+    destacadas.innerHTML = PRODUCTOS.slice(0, 3).map(p => `
+      <div class="vitrina-pieza">
+        <div class="vitrina-imagen">
+          <img src="${p.imagen}" alt="${p.nombre}" onerror="this.parentElement.textContent='Foto no disponible'">
+        </div>
+        <span class="vitrina-categoria">${p.categoria.charAt(0).toUpperCase() + p.categoria.slice(1)}</span>
+        <h3>${p.nombre}</h3>
+        <p>${p.descripcion}</p>
+      </div>
+    `).join('');
+  }
+
   // Menú móvil
   const toggle = document.querySelector('.nav-toggle');
   const links = document.querySelector('.nav-links');
